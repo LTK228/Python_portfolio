@@ -17,28 +17,29 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"ltk228.github.io","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"default"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"ltk228.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"default"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="Assignment 4 - 影像處理利用 Python 的 coding，達到 Photoshop 的效果，如縮小畫質、去背及 blur 演算法，以下透過史丹佛老師撰寫的套件 - SimpleImage，進⾏影像偵測 (Pixel Detection)、像素操作 (Pixel Manipulation)、綠屛處理 (remove green screen) 等…技巧。   1. 火災　　在影響處">
+  <meta name="description" content="影像處理　　利用 Python 的 coding，達到 Photoshop 的效果，如縮小畫質、去背及 blur 演算法，以下透過史丹佛老師撰寫的套件 - SimpleImage，進⾏影像偵測 (Pixel Detection)、像素操作 (Pixel Manipulation)、綠屛處理 (remove green screen) 等…技巧。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Gimmy">
-<meta property="og:url" content="https://ltk228.github.io/Assignment-4-%E5%BD%B1%E5%83%8F%E8%99%95%E7%90%86/">
+<meta property="og:title" content="Python Portfolio">
+<meta property="og:url" content="https://ltk228.github.io/Python-Portfolio/">
 <meta property="og:site_name" content="Gimmy">
-<meta property="og:description" content="Assignment 4 - 影像處理利用 Python 的 coding，達到 Photoshop 的效果，如縮小畫質、去背及 blur 演算法，以下透過史丹佛老師撰寫的套件 - SimpleImage，進⾏影像偵測 (Pixel Detection)、像素操作 (Pixel Manipulation)、綠屛處理 (remove green screen) 等…技巧。   1. 火災　　在影響處">
+<meta property="og:description" content="影像處理　　利用 Python 的 coding，達到 Photoshop 的效果，如縮小畫質、去背及 blur 演算法，以下透過史丹佛老師撰寫的套件 - SimpleImage，進⾏影像偵測 (Pixel Detection)、像素操作 (Pixel Manipulation)、綠屛處理 (remove green screen) 等…技巧。">
 <meta property="og:locale" content="zh_TW">
 <meta property="og:image" content="https://ltk228.github.io/img/Assignment4_fire.png">
 <meta property="og:image" content="https://ltk228.github.io/img/Assignment4_fire.gif">
 <meta property="og:image" content="https://ltk228.github.io/img/Assignment4_mirror.png">
 <meta property="og:image" content="https://ltk228.github.io/img/Assignment4_mirror.gif">
-<meta property="article:published_time" content="2022-01-01T05:38:05.116Z">
-<meta property="article:modified_time" content="2022-01-01T07:20:23.300Z">
+<meta property="article:published_time" content="2021-12-31T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-01-01T07:51:22.374Z">
 <meta property="article:author" content="Gimmy">
-<meta property="article:tag" content="Gimmy, &#39;部落格&#39;">
+<meta property="article:tag" content="python">
+<meta property="article:tag" content="demo">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://ltk228.github.io/img/Assignment4_fire.png">
 
-<link rel="canonical" href="https://ltk228.github.io/Assignment-4-%E5%BD%B1%E5%83%8F%E8%99%95%E7%90%86/">
+<link rel="canonical" href="https://ltk228.github.io/Python-Portfolio/">
 
 
 <script id="page-configurations">
@@ -51,7 +52,7 @@
   };
 </script>
 
-  <title> | Gimmy</title>
+  <title>Python Portfolio | Gimmy</title>
   
 
 
@@ -144,10 +145,6 @@
     </header>
 
     
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
   <div class="reading-progress-bar"></div>
 
 
@@ -163,7 +160,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-TW">
-    <link itemprop="mainEntityOfPage" href="https://ltk228.github.io/Assignment-4-%E5%BD%B1%E5%83%8F%E8%99%95%E7%90%86/">
+    <link itemprop="mainEntityOfPage" href="https://ltk228.github.io/Python-Portfolio/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -176,7 +173,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          
+          Python Portfolio
         </h1>
 
         <div class="post-meta">
@@ -187,7 +184,16 @@
               <span class="post-meta-item-text">發表於</span>
               
 
-              <time title="創建時間：2022-01-01 13:38:05 / 修改時間：15:20:23" itemprop="dateCreated datePublished" datetime="2022-01-01T13:38:05+08:00">2022-01-01</time>
+              <time title="創建時間：2022-01-01 00:00:00 / 修改時間：15:51:22" itemprop="dateCreated datePublished" datetime="2022-01-01T00:00:00+08:00">2022-01-01</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分類於</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a>
+                </span>
             </span>
 
           
@@ -201,8 +207,8 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="Assignment-4-影像處理"><a href="#Assignment-4-影像處理" class="headerlink" title="Assignment 4 - 影像處理"></a>Assignment 4 - 影像處理</h1><p>利用 Python 的 coding，達到 Photoshop 的效果，如縮小畫質、去背及 blur 演算法，以下透過史丹佛老師撰寫的套件 - SimpleImage，進⾏影像偵測 (Pixel Detection)、像素操作 (Pixel Manipulation)、綠屛處理 (remove green screen) 等…技巧。</p>
-<!-- more  -->
+        <h1 id="影像處理"><a href="#影像處理" class="headerlink" title="影像處理"></a>影像處理</h1><p>　　利用 Python 的 coding，達到 Photoshop 的效果，如縮小畫質、去背及 blur 演算法，以下透過史丹佛老師撰寫的套件 - SimpleImage，進⾏影像偵測 (Pixel Detection)、像素操作 (Pixel Manipulation)、綠屛處理 (remove green screen) 等…技巧。</p>
+<span id="more"></span>
 
 <h2 id="1-火災"><a href="#1-火災" class="headerlink" title="1. 火災"></a>1. 火災</h2><p>　　在影響處理中有一個很重要的應用，利用電腦偵測在森林內是否有火災，偵測到才能及時的通知當地政府災情。在本作品中會先測火災點 (紅點)，將火災點標註成紅色，並且將其他區域改為灰色。</p>
 <img src="../img/Assignment4_fire.png" alt='fire.png' />
@@ -222,17 +228,21 @@
     
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/python/" rel="tag"># python</a>
+              <a href="/tags/demo/" rel="tag"># demo</a>
+          </div>
 
         
 
 
         
     <div class="post-nav">
-      <div class="post-nav-item">
-    <a href="/hello-world/" rel="prev" title="Hello World">
-      <i class="fa fa-chevron-left"></i> Hello World
-    </a></div>
       <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/hello-world/" rel="next" title="Hello World">
+      Hello World <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -291,7 +301,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Assignment-4-%E5%BD%B1%E5%83%8F%E8%99%95%E7%90%86"><span class="nav-number">1.</span> <span class="nav-text">Assignment 4 - 影像處理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E7%81%AB%E7%81%BD"><span class="nav-number">1.1.</span> <span class="nav-text">1. 火災</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E9%8F%A1%E5%83%8F"><span class="nav-number">1.2.</span> <span class="nav-text">2. 鏡像</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%BD%B1%E5%83%8F%E8%99%95%E7%90%86"><span class="nav-number">1.</span> <span class="nav-text">影像處理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E7%81%AB%E7%81%BD"><span class="nav-number">1.1.</span> <span class="nav-text">1. 火災</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E9%8F%A1%E5%83%8F"><span class="nav-number">1.2.</span> <span class="nav-text">2. 鏡像</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -309,12 +319,24 @@
           <span class="site-state-item-name">文章</span>
         </a>
       </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分類</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">標籤</span>
+      </div>
   </nav>
 </div>
 
 
 
       </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
 
     </div>
   </aside>
@@ -339,7 +361,7 @@
   </span>
   <span class="author" itemprop="copyrightHolder"><a target="_blank" rel="noopener" href='https://github.com/LTK228'>Gimmy</a></span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 強力驅動
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 強力驅動
   </div>
 
         
@@ -365,7 +387,7 @@
 <script src="/js/motion.js"></script>
 
 
-<script src="/js/schemes/muse.js"></script>
+<script src="/js/schemes/pisces.js"></script>
 
 
 <script src="/js/next-boot.js"></script>
